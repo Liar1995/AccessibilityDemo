@@ -212,6 +212,7 @@ public class AutoReplyService extends AccessibilityService {
 
     @SuppressLint("NewApi")
     private boolean fill() {
+        //以后加别的判断
         AccessibilityNodeInfo rootNode = getRootInActiveWindow();
         if (rootNode != null) {
             return findEditText(rootNode, "正在忙,稍后回复你");
